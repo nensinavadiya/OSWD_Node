@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Call to Node.js</title>
+</head>
+<body>
+  <h1>Hello from AJAX Call!</h1>
+  <button onclick="fetchHello()">Get Hello from Server</button>
+  <div id="response"></div>
+
+  <script>
+    function fetchHello() {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', '/gethello', true);
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            document.getElementById('response').innerText = xhr.responseText;
+          } else {
+            document.getElementById('response').innerText = 'Failed to fetch data from the server';
+          }
+        }
+      };
+
+      xhr.send();
+    }
+  </script>
+</body>
+</html>
