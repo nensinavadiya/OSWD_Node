@@ -23,6 +23,6 @@ wss.on('connection', (ws) => {
     });
 });
 
-server.listen(2023, () => {
-    console.log('Server is running on port 2023');
+server.listen(2020, () => {
+    console.log('Server is running on port 2020');
 });

@@ -22,9 +22,9 @@ function connectToDatabase() {
 function insertRecord() {
   return new Promise((resolve, reject) => {
     const employee = {
-      name: 'Raj Safwan',
+      name: 'Nensi Navadiya',
       department: 'IT',
-      salary: 50000,
+      salary: 100000,
     };
 
     connection.query('INSERT INTO employee SET ?', employee, (err, result) => {

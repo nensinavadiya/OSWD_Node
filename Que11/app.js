@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 
 const app = express();
-const PORT = 2023;
+const PORT = 2020;
 
 const API_KEY = 'ac252f61-1b28-4e48-a197-b5dd1a79dcd4'; // Get your API key by signing up at https://www.cricapi.com/
 

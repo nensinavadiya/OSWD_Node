@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 
-const port = 2021;
+const port = 2020;
 
 // Helper function to serve static files
 function serveStaticFile(res, filename, contentType) {

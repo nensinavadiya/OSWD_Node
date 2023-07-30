@@ -1,7 +1,3 @@
-
-
-
-
 const fs = require('fs');
 const zlib = require('zlib');
 
@@ -18,7 +14,7 @@ function decompressZlib(inputFilePath, outputFilePath) {
 }
 
 // Usage example:
-const compressedFilePath = './Daxit.rar'; // Replace with the path of the zlib-compressed file
+const compressedFilePath = './nensi.rar'; // Replace with the path of the zlib-compressed file
 const decompressedFilePath = './d.txt.txt'; // Replace with the desired output file path
 
 decompressZlib(compressedFilePath, decompressedFilePath);

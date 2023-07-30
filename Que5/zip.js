@@ -17,7 +17,7 @@ function compressFile(sourcePath, zipPath) {
 }
 
 // Usage example:
-const sourceFile = './Daxit.txt'; // Replace with the path of the file you want to compress
+const sourceFile = './nensi.txt'; // Replace with the path of the file you want to compress
 const zipFile = './d.txt.zip'; // Replace with the desired destination for the ZIP file
 
 compressFile(sourceFile, zipFile);
